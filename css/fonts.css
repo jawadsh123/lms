@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Dancing Script';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Dancing-Script-regular/Dancing-Script-regular.eot');
+  src: url('../fonts/Dancing-Script-regular/Dancing-Script-regular.eot?#iefix') format('embedded-opentype'),
+       local('Dancing Script'),
+       local('Dancing-Script-regular'),
+       url('../fonts/Dancing-Script-regular/Dancing-Script-regular.woff2') format('woff2'),
+       url('../fonts/Dancing-Script-regular/Dancing-Script-regular.woff') format('woff'),
+       url('../fonts/Dancing-Script-regular/Dancing-Script-regular.ttf') format('truetype'),
+       url('../fonts/Dancing-Script-regular/Dancing-Script-regular.svg#DancingScript') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Roboto-regular/Roboto-regular.eot');
+  src: url('../fonts/Roboto-regular/Roboto-regular.eot?#iefix') format('embedded-opentype'),
+       local('Roboto'),
+       local('Roboto-regular'),
+       url('../fonts/Roboto-regular/Roboto-regular.woff2') format('woff2'),
+       url('../fonts/Roboto-regular/Roboto-regular.woff') format('woff'),
+       url('../fonts/Roboto-regular/Roboto-regular.ttf') format('truetype'),
+       url('../fonts/Roboto-regular/Roboto-regular.svg#Roboto') format('svg');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Lato-regular/Lato-regular.eot');
+  src: url('../fonts/Lato-regular/Lato-regular.eot?#iefix') format('embedded-opentype'),
+       local('Lato Regular'),
+       local('Lato-regular'),
+       url('../fonts/Lato-regular/Lato-regular.woff2') format('woff2'),
+       url('../fonts/Lato-regular/Lato-regular.woff') format('woff'),
+       url('../fonts/Lato-regular/Lato-regular.ttf') format('truetype'),
+       url('../fonts/Lato-regular/Lato-regular.svg#Lato') format('svg');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/Ubuntu-700/Ubuntu-700.eot');
+  src: url('../fonts/Ubuntu-700/Ubuntu-700.eot?#iefix') format('embedded-opentype'),
+       local('Ubuntu Bold'),
+       local('Ubuntu-700'),
+       url('../fonts/Ubuntu-700/Ubuntu-700.woff2') format('woff2'),
+       url('../fonts/Ubuntu-700/Ubuntu-700.woff') format('woff'),
+       url('../fonts/Ubuntu-700/Ubuntu-700.ttf') format('truetype'),
+       url('../fonts/Ubuntu-700/Ubuntu-700.svg#Ubuntu') format('svg');
+}
+
+@font-face {
+  font-family: 'Lobster';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Lobster-regular/Lobster-regular.eot');
+  src: url('../fonts/Lobster-regular/Lobster-regular.eot?#iefix') format('embedded-opentype'),
+       local('Lobster'),
+       local('Lobster-regular'),
+       url('../fonts/Lobster-regular/Lobster-regular.woff2') format('woff2'),
+       url('../fonts/Lobster-regular/Lobster-regular.woff') format('woff'),
+       url('../fonts/Lobster-regular/Lobster-regular.ttf') format('truetype'),
+       url('../fonts/Lobster-regular/Lobster-regular.svg#Lobster') format('svg');
+}
+

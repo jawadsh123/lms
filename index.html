@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Login or Signup</title>
+    <link rel="stylesheet" type="text/css" href="css/sliding_home_style.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <script src="js-scripts/jquery-3.1.0.js" type="text/javascript"></script>
+    <script src="js-scripts/main_javascript.js" type="text/javascript"></script>
+
+  </head>
+  <body>
+    <div class="whole-container">
+      <div class="slide-container" >
+
+        <div class="slide-1">
+          <p class="header">Login.</p>
+          <div class="member-form ">
+            <form id = "loginForm">
+              <label for="username" class="second-wave "><span class="label-text">Username</span></label>
+              <div class="field-wrapper second-wave">
+                <i class="glyphicon"><img src="images/user.png" alt="" /></i>
+                <input type="text" name="username" class="text-ip well" id="username" maxlength="20" >
+              </div>
+              <label for="password" class="first-wave"><span class="label-text">Password</span></label>
+              <div class="field-wrapper first-wave">
+                <i class="glyphicon"><img src="images/key.png" alt="" /></i>
+                <input type="password" name="password" class="text-ip well" id="password-1" maxlength="20">
+              </div>
+              <span class="disclaimer">Incorrect username or password.</span>
+              <button class="slide-button second-wave" id="login-btn" type="button" name="login"><span>Login</span></button>
+              <button class="slide-button signup" type="button" id="logon"><span>Sign Up!</span></button>
+            </form>
+          </div>
+        </div>
+
+        <div class="slide-2">
+          <p class="header">Sign Up.</p>
+          <div class="signup-form ">
+            <form id = "signupForm">
+              <label for="name" class="second-wave"><span class="label-text">Username</span></label>
+              <div class="field-wrapper second-wave">
+                <i class="glyphicon"><img src="images/user.png" alt="" /></i>
+                <input type="text" class="text-ip well" name="newUsername" id="name" maxlength="20">
+              </div>
+              <label for="college_id" class="first-wave "><span class="label-text">College Id</span></label>
+              <div class="field-wrapper first-wave">
+                <i class="glyphicon"><img src="images/card.png" alt="" /></i>
+                <input type="text" class="text-ip well" name="collegeId" id="college_id" maxlength="20">
+              </div>
+              <label for="password" class="first-wave "><span class="label-text">Password</span></label>
+              <div class="field-wrapper first-wave">
+                <i class="glyphicon"><img src="images/key.png" alt="" /></i>
+                <input type="password" class="text-ip well" name="newPassword" id="password-2" maxlength="20">
+              </div>
+              <span class="disclaimer">Error in submitting data.</span>
+              <button class="slide-button second-wave" id="signup-btn" type="button"><span>Sign Up</span></button>
+              <button class="slide-button back" type="button" id="back-bt"><span>Back</span></button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="overlay">
+
+    </div>
+
+    <div class="brand-name">
+      <span class="name">The Librarian</span><br>
+      <span class="desc">Library Management System.</span>
+    </div>
+
+  </body>
+</html>

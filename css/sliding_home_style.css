@@ -1,0 +1,301 @@
+
+body{
+  background: url(../images/preview.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+/*The container within which everything lies*/
+.whole-container{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+/*The container that contains our slides*/
+.slide-container{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 200%;
+  transition: all 2s cubic-bezier(0.42, 0, 0.57, 1.1)
+}
+
+/*Member login slide*/
+.slide-1, .slide-2{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.slide-2{
+  left: 100vw;
+}
+
+.member-form, .signup-form{
+  height: 60%;
+  width: 21%;
+  min-width: 270px !important;
+  align-self: center;
+  position: relative;
+}
+
+p.header{
+  font-family: 'Dancing Script', cursive;
+  font-size: 4em;
+  align-self: center;
+  color: #2c3e50;
+  position: relative;
+  top: 50px;
+}
+
+.label-text{
+  color: #2c3e50;
+  font-family: Roboto;
+  padding-left: 7px;
+}
+
+label{
+  width: 270px;
+}
+
+form{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-button, .slide-button:active, .slide-button:visited, .slide-button:focus{
+  margin-top: 10px;
+  background-color: #e4e4e2;
+  color: #16a085 !important;
+  height: 48px;/*7.4vh;*/
+  min-height: 48px;
+  min-width: 130px;
+  width: 270px;
+  align-self: center;
+  border-radius: 7px !important;
+  transition: all 500ms ease, left 1s ease;
+  font-family: 'Roboto' !important;
+  font-size: 1.5em !important;
+  font-weight: 500 !important;
+  position: relative;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+#logon span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all 500ms;
+  right: -10px;
+}
+
+#logon span::after{
+  font-family: "Roboto";
+  content:">";
+  font-size: 1em;
+  position: relative;
+  right: -20px;
+  transition: all 500ms;
+  opacity: 0;
+}
+
+#back-bt span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all 500ms;
+  left: -10px;
+}
+
+#back-bt span::before{
+  font-family: "Roboto";
+  content:"<";
+  font-size: 1em;
+  position: relative;
+  left: -20px;
+  transition: all 500ms;
+  opacity: 0;
+}
+
+button, button:focus, button:active{
+  border: none;
+  outline: none;
+}
+
+.text-ip{
+  height: 38px;
+  width: 240px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  min-width: 130px;
+  font-size: 1em;
+  color: #16a085;
+  align-self: center;
+  transition: all 300ms, left 1s;
+  padding-left: 35px !important;
+}
+
+.text-ip:focus, .btn:focus{
+  outline: none !important;
+}
+
+.field-wrapper{
+  align-self: center;
+}
+
+i.glyphicon{
+  position: absolute;
+  z-index: 1;
+  top: 13px;
+  left: 10px;
+}
+
+.glyphicon img{
+  height: 20px;
+}
+
+.disclaimer{
+  color: red !important;
+  height: 2vh;
+  padding-left: 10px;
+  margin-top: -7px;
+  opacity: 0;
+  transition: all 300ms;
+}
+
+.first-wave{
+  left: 0px;
+  position: relative;
+  transition: all 300ms, left 0.5s;
+}
+
+.second-wave{
+  left: 0px;
+  position: relative;
+  transition: all 300ms, left 0.5s;
+}
+
+.overlay{
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  left: 50%;
+  opacity: 0.5;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  transition: 1s ease-in-out;
+  z-index: -9;
+}
+
+.brand-name{
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #bdc3c7;
+}
+
+.brand-name .name{
+  font-family: 'Lobster';
+  font-size: 4em;
+}
+
+.brand-name .desc{
+  font-family: Lato;
+  font-size: 1.3em;
+  color: white;
+}
+
+
+
+/* ********************************* */
+/* ********************************* */
+/*All animations below this line*/
+/* ********************************* */
+/* ********************************* */
+
+
+.slide-button:hover{
+  background-color: #16a085;
+}
+
+.slide-button:hover span{
+  color: white !important;
+}
+
+#logon:hover span{
+  right: 0px;
+}
+
+#logon:hover span::after{
+  opacity: 1;
+  right: -10px;
+  color: #e4e4e2 !important;
+}
+
+#back-bt:hover span{
+  left: 0px;
+}
+
+#back-bt:hover span::before{
+  opacity: 1;
+  left: -10px;
+  color: #e4e4e2 !important;
+}
+
+.warning{
+  background-color: #ff4444 !important;
+}
+
+.isActive{
+  opacity: 1;
+}
+
+.success{
+  background-color: #00C851 !important;
+}
+
+
+/* ***************************** */
+
+/* Code for moving slide to left */
+.moveFirst{
+  left: -20px;
+}
+
+.moveSecond{
+  transition-delay: 0.06s;
+  left: -10px;
+}
+
+.moveLeft{
+  transition-delay: 0.1s;
+  left: -100vw;
+}
+
+/* ********************************* */
+
+/* Code for moving slide back to right*/
+
+.moveFirst-2{
+  left: 20px;
+}
+
+.moveSecond-2{
+  transition-delay: 0.1s;
+  left: 10px;
+}
+
+/* ************************************** */

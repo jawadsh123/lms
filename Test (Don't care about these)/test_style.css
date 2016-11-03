@@ -1,0 +1,37 @@
+
+body{
+  margin: 0px;
+}
+
+.below-text{
+  width: 70%;
+  height: 2000px;
+  margin: auto;
+  font-family: Calibri;
+  padding-top: 30px;
+}
+.img_container{
+  background: url(../images/front-book.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+  background-position: bottom center;
+  background-attachment: fixed;
+  z-index: 2;
+}
+
+.below-text-container{
+  width: 100%;
+  box-shadow: -2px 0px 3px 2px black;
+}
+
+.img_container2{
+  background: url(../images/book3.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+  background-position: bottom center;
+  background-attachment: fixed;
+}
