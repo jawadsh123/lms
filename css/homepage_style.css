@@ -1,0 +1,300 @@
+
+body{
+  margin: 0px;
+}
+
+
+
+/*
+**************************
+**** Navbar section  *****
+**************************
+*/
+.navbar{
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  color: #ecf0f1;
+  background-color: transparent;
+  transition: 500ms ease-in-out;
+  z-index: 5;
+}
+
+.navbar .brand-name{
+  display: inline-block;
+  position: relative;
+  top: -4px;
+  left: 30px;
+  padding-right: 20px;
+  font-size: 3em;
+  font-family: "Dancing Script";
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.navbar .brand-name:hover{
+  color: #c0392b;
+}
+
+.navbar .nav-list{
+  list-style: none;
+  position: relative;
+  left: 20px;
+  font-family: Lato;
+  font-size: 1.07em;
+}
+
+.navbar .nav-list li{
+  display: inline;
+  margin: 0px;
+  padding: 15px 25px;
+  transition: all 300ms ease-in-out;
+}
+
+.navbar .nav-list li:hover{
+  background-color: #1abc9c;
+  cursor: pointer;
+}
+
+.navbar .user-name{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  right: 50px;
+  padding: 7px 25px;
+  border-radius: 5px;
+  font-family: Roboto;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.navbar .user-name:hover{
+  background-color: #c0392b;
+}
+
+a,a:link,a:visited,a:hover,a:focus,a:active{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/*
+*******************************
+**** Dark Navbar section  *****
+*******************************
+*/
+
+.navbar-dark{
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: #16a085;
+  color: #ecf0f1;
+}
+
+.navbar-dark .brand-name{
+  display: inline-block;
+  position: relative;
+  top: -4px;
+  left: 30px;
+  padding-right: 20px;
+  font-size: 3em;
+  font-family: "Dancing Script";
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.navbar-dark .brand-name:hover{
+  color: #34495e;
+}
+
+.navbar-dark .nav-list{
+  list-style: none;
+  position: relative;
+  left: 20px;
+  font-family: Lato;
+  font-size: 1.07em;
+}
+
+.navbar-dark .nav-list li{
+  display: inline;
+  margin: 0px;
+  padding: 15px 25px;
+  transition: all 300ms ease-in-out;
+}
+
+.navbar-dark .nav-list li:hover{
+  background-color: #1abc9c;
+  cursor: pointer;
+}
+
+.navbar-dark .user-name{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  right: 50px;
+  padding: 7px 25px;
+  border-radius: 5px;
+  font-family: Roboto;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.navbar-dark .user-name:hover{
+  background-color: #c0392b;
+}
+
+
+
+
+/*
+************************************
+****** Landing image section *******
+************************************
+*/
+
+.landing-img-container{
+  background-image: url(../images/book-stack.jpg);
+  height: 700px;
+  background-size: cover;
+  background-position: center 30%;
+  background-attachment: fixed;
+  padding-bottom: 0px;
+}
+
+
+
+/*
+*********************************
+******* first section ***********
+*********************************
+*/
+
+
+.first-div{
+  height: 1000px;
+  margin-bottom: 200px;
+  padding-top: 60px;
+  background-color: white;
+
+}
+
+.first-div hr{
+  color: black;
+  width: 900px;
+}
+
+.first-div .title{
+  position: relative;
+  text-align: center;
+  font-size: 3.5em;
+  font-family: Lobster;
+}
+
+.first-div .features{
+  height: 800px;
+  padding-top: 50px;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features .card{
+  height: 350px;
+  width: 350px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+
+}
+
+.card img{
+  height: 280px;
+  position: relative;
+  left: 35px;
+  transition: 300ms ease-in-out;
+}
+
+.card div{
+  text-align: center;
+  font-family: Lato;
+  font-size: 1.5em;
+}
+
+.card:hover{
+  box-shadow: 0px 0px 3px grey;
+  background-color: #1abc9c;
+  color: white;
+}
+
+.card:hover img{
+  transform: scale(1.05);
+}
+
+
+/*****************************
+******** Footer **************
+******************************/
+
+.footer{
+  position: fixed;
+  display: flex;
+  bottom: 0px;
+  height: 200px;
+  width: 100%;
+  background-color: rgb(20,20,20);
+  color: white;
+  z-index: -9;
+  font-family: Lato;
+}
+
+.footer .navigate{
+  list-style: none;
+  margin-left: 25px;
+  font-size: 1.2em;
+  align-self: center;
+  color: #3498db;
+}
+
+.navigate ul{
+  list-style: none;
+}
+
+.footer .title{
+  align-self: center;
+  margin-left: 100px;
+  font-size: 2em;
+}
+
+.footer .social-title{
+  align-self: center;
+  margin-left: 200px;
+  font-size: 2em;
+}
+
+.footer .social{
+  align-self: center;
+  margin-left: 50px;
+}
+
+.social img{
+  height: 70px;
+  margin-left: 5px;
+  cursor: pointer;
+}

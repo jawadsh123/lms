@@ -1,0 +1,423 @@
+
+
+/*
+**************************
+**** Navbar section  *****
+**************************
+*/
+
+.navbar-dark{
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: #16a085;
+  color: #ecf0f1;
+}
+
+.navbar-dark .brand-name{
+  display: inline-block;
+  position: relative;
+  top: -4px;
+  left: 30px;
+  padding-right: 20px;
+  font-size: 3em;
+  font-family: "Dancing Script";
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.navbar-dark .brand-name:hover{
+  color: #34495e;
+}
+
+.navbar-dark .nav-list{
+  list-style: none;
+  position: relative;
+  left: 20px;
+  font-family: Lato;
+  font-size: 1.07em;
+}
+
+.navbar-dark .nav-list li{
+  display: inline;
+  margin: 0px;
+  padding: 15px 25px;
+  transition: all 300ms ease-in-out;
+}
+
+.navbar-dark .nav-list li:hover{
+  background-color: #1abc9c;
+  cursor: pointer;
+}
+
+.navbar-dark .user-name{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  right: 50px;
+  padding: 7px 25px;
+  border-radius: 5px;
+  font-family: Roboto;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.navbar-dark .user-name:hover{
+  background-color: #c0392b;
+}
+
+a:nth-child(2) li{
+  background-color: #1abc9c;
+}
+
+a,a:link,a:visited,a:hover,a:focus,a:active{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/********************************************
+************Search Bar Section***************
+*********************************************/
+
+.search-container{
+  margin-top: 75px;
+  position: fixed;
+  height: 4em;
+  width: 100%;
+}
+
+.search-container .search-img{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /*To vertically center*/
+  left: 25px;
+  z-index: 1;
+  height: 2em;
+}
+
+.search-container .search-bar{
+  position: relative;
+  top: 0.5em;
+  left: 1em;
+  padding-left: 50px;
+  width: 35%;
+  height: 2.5em;
+  font-size: 1em;
+  font-family: Roboto;
+  border-radius: 20px;
+  border-color: #7f8c8d;
+  outline: none; /*To remove glow on focus*/
+}
+
+
+
+/******************************************
+**********  Catalogue Container  **********
+*******************************************/
+
+.catalogue{
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  left: 5px;
+  right: 5px;
+  margin-top: 150px;
+  height: auto;
+  padding-left: 5px;
+  z-index: -1;
+}
+
+.catalogue .book-card{
+  height: 430px;
+  width: 300px;
+  margin: 15px;
+  display: inline;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: 800ms ease-in-out, box-shadow 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.book-card .book-cover{
+  margin-left: 50%;
+  height: 300px;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+
+.book-card .details{
+  padding-left: 50px;
+  width: 200px;
+}
+
+.details .title{
+  font-size: 1.1em;
+  font-family: Ubuntu;
+}
+
+.details .author{
+  display: block;
+  font-size: 1em;
+  font-family: cursive;
+}
+
+.details .no-of-books{
+  font-size: 0.8em;
+  font-family: cursive;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  transform: translateY(80px);
+  transition: 300ms ease-in-out;
+}
+
+.book-card:hover{
+  box-shadow: 0px 0px 15px grey;
+}
+
+.book-card:hover .no-of-books{
+  transform: translateY(0px);
+}
+
+/*****************************************
+************* Modal section **************
+*****************************************/
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0;
+  transition: 500ms ease-in-out;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.modal{
+  position: fixed;
+  display: flex;
+  height: 500px;
+  width: 800px;
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 15px;
+  background-color: white;
+  transition: 500ms ease-in-out;
+  z-index: 1;
+}
+
+.modal .book-cover{
+  height: 400px;
+  position: relative;
+  top: -10px;
+}
+
+.modal .flex-box-1{
+  display: flex;
+  width: 300px;
+  height: 500px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-box-1 span{
+  font-family: Roboto;
+  background-color: #16a085;
+  color: white;
+  padding: 5px;
+  font-size: 1.4em;
+  border-radius: 5px;
+}
+
+.flex-box-1 b{
+  font-size: 1.1em;
+}
+
+.modal .flex-box-2{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+}
+
+.flex-box-2 .title{
+  text-align: center;
+  font-family: Lobster;
+  font-size: 2em;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.flex-box-2 .summary{
+  max-height: 170px;
+  overflow: auto;
+  padding: 10px;
+  font-family: Lato;
+}
+
+.flex-box-2 .author{
+  font-family: Lato;
+  font-weight: bold;
+  height: 20px;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.flex-box-2 .author span{
+  padding: 5px;
+  background-color: #16a085;
+  color: white;
+  border-radius: 5px;
+}
+
+.flex-box-2 .extra-details{
+  padding: 10px;
+  margin-top: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+.extra-details .category{
+  padding: 5px;
+}
+
+.category span{
+  background-color: #16a085;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.extra-details .edition{
+  position: relative;
+  left: 40px;
+  padding: 5px;
+}
+
+.edition span{
+  background-color: #16a085;
+  color: white;
+  padding: 5px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+.extra-details .isbn{
+  position: relative;
+  top: 30px;
+  padding: 5px;
+}
+
+.isbn span{
+  background-color: #16a085;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.button{
+  height: 50px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 1.3em;
+  color: #16a085;
+  cursor: pointer;
+  position: absolute;
+  bottom: 80px;
+  right: 180px;
+  transition: 300ms ease-in-out;
+
+  border-radius: 10px;
+  border: 1px solid #1abc9c;
+  z-index: 1;
+}
+
+.button:hover{
+  background-color: #1abc9c;
+  color: white;
+}
+
+.error{
+  height: 0px;
+  opacity: 0;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 1.3em;
+  color: white;
+  background-color: #c0392b;
+  position: absolute;
+  bottom: 25px;
+  right: 180px;
+  transition: 300ms ease-in-out;
+
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.success{
+  height: 0px;
+  opacity: 0;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 1.3em;
+  color: white;
+  background-color: #27ae60;
+  position: absolute;
+  bottom: 25px;
+  right: 180px;
+  transition: 300ms ease-in-out;
+
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.modal .close{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d35400;
+  height: 30px;
+  width: 30px;
+  top: -5px;
+  right: -5px;
+  border-radius: 25%;
+  box-shadow: 0px 0px 10px grey;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.close img{
+  height: 20px;
+}
+
+.close:hover{
+  background-color: #c0392b;
+}
